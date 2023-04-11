@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('note');
+            $table->string('note2');
             $table->longText('description');
             $table->foreignId('category_id')->constrained();
             $table->timestamps();
